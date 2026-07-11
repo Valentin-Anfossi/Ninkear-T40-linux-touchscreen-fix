@@ -9,7 +9,8 @@ I then tried about 20 solutions it gave me until something changed and untangled
 
 So it's provided AS IS use it at YOUR OWN RISK
 
-'''- dump and decompile dsdt
+```
+- dump and decompile dsdt
 
 mkdir -p /tmp/acpi_work && cd /tmp/acpi_work
 
@@ -46,5 +47,8 @@ sudo cp /tmp/acpi_override.cpio /boot/acpi_override.cpio
 - tell grub to use our override and reboot
 
 echo 'GRUB_EARLY_INITRD_LINUX_CUSTOM="acpi_override.cpio"' | sudo tee -a /etc/default/grub
+
 sudo update-grub
-sudo reboot'''
+
+sudo reboot
+```
