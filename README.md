@@ -1,14 +1,15 @@
 # Ninkear-T40-linux-touchscreen-fix
 Quick fix of the ninkear t40 firmware to enable touchscreen support
 
-If you're a competent dev please have a look and reach out if I did something I shouldn't.
+If you're a competent linux dev please have a look and reach out if I did something I shouldn't.
 
-I have no real understanding of how the linux kernel works or how it manages devices, I just found relevant dmesg errors and fed them to claude 
+I have no deep understanding of how the linux kernel works or how it manages devices, I just found relevant dmesg errors and fed them to claude 
 
 I then tried about 20 solutions it gave me until something changed and untangled it from there.
-so it's provided AS IS use it at YOUR OWN RISK
 
--dump and decompile dsdt
+So it's provided AS IS use it at YOUR OWN RISK
+
+- dump and decompile dsdt
 
 mkdir -p /tmp/acpi_work && cd /tmp/acpi_work
 
@@ -16,7 +17,7 @@ sudo cat /sys/firmware/acpi/tables/DSDT > dsdt.dat
 
 iasl -d dsdt.dat
 
--patching the two lines that resets the interupt/reset pin
+- patching the two lines that resets the interupt/reset pin
 
 cp dsdt.dsl dsdt_patched.dsl
 
