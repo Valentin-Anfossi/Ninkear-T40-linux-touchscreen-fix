@@ -3,7 +3,7 @@ Quick fix of the ninkear t40 firmware to enable touchscreen support
 
 If you're a competent dev please have a look and reach out if I did something I shouldn't.
 
-I have no understanding of how the linux kernel works or how it manages devices, I just found relevant dmesg errors and fed them to claude 
+I have no real understanding of how the linux kernel works or how it manages devices, I just found relevant dmesg errors and fed them to claude 
 
 I then tried about 20 solutions it gave me until something changed and untangled it from there.
 so it's provided AS IS use it at YOUR OWN RISK
