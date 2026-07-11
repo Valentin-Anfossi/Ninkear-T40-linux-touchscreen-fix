@@ -1,6 +1,13 @@
 # Ninkear-T40-linux-touchscreen-fix
 Quick fix of the ninkear t40 firmware to enable touchscreen support
 
+# FIX:
+
+There's a config line in the firmware that initialise a pin to output mode instead of input which prevent the kernel to init the touchscreen, deleting that duplicate line restore the touch (and everything else still works so yeepee).
+
+Tested on Ubuntu 26.04 LTS and Linux Mint Cinnamon
+
+
 # DISCLAIMER :
 If you're a competent linux dev please have a look and reach out if I did something I shouldn't.
 
@@ -8,12 +15,7 @@ I have no real deep understanding of how the linux kernel works or how it manage
 
 It's provided AS IS use it at YOUR OWN RISK
 
-# FIX:
 
-There's a config line in the firmware that initialise a pin to output mode instead of input which prevent the kernel to init the touchscreen, deleting that duplicate line restore the touch (and everything else still works so yeepee).
-
-
-Tested on Ubuntu 26.04 LTS and Linux Mint Cinnamon
 
 ```
 # dump and decompile dsdt
