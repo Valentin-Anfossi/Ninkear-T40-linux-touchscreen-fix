@@ -11,8 +11,6 @@ Tested on Ubuntu 26.04 LTS and Linux Mint Cinnamon
 # DISCLAIMER :
 If you're a competent linux dev please have a look and reach out if I did something I shouldn't.
 
-I have no real deep understanding of how the linux kernel works or how it manages devices, so it might break something (but probably won't)
-
 It's provided AS IS use it at YOUR OWN RISK
 
 
